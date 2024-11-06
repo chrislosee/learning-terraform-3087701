@@ -88,10 +88,6 @@ module "alb" {
     }
   }
 
-  tags = {
-    Environment = "dev"
-  }
-
   target_groups = {
     ex-instance = {
       name_prefix      = "blog-"
@@ -103,7 +99,7 @@ module "alb" {
   }
 
   tags = {
-    Environment = "Development"
+    Environment = "dev"
     Project     = "Example"
   }
 }
